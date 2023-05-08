@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="assets/IMG/favicon.jpg">
+    <script src="https://kit.fontawesome.com/56aebad98f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Ivanna López Barbona</title>
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                   
+                    <nav id="nav" class="">
+                        <ul id="link">
+                            <li><a href="#inicio" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MÍ</a></li>
+                            <li><a href="#educacion" onclick="seleccionar(this)">EDUCACIÓN</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- ICONOS DEL MENU RESPONSIVO -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- ICONOS DE LAS REDES SOCIALES -->
+                    <div class="redes">
+                        <a href="https://www.instagram.com/ivanna.lopezbarbona/"target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://www.facebook.com/ivanna.lopezbarbona/"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Ivanna49" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy Ivanna <span>López Barbona</span> Desarrolladora Web</h2>
+                <a href="#proyectos">Ver proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-img">
+            <img src="asset/IVI.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mí</p>
+            <h2>Hola, soy <span>Ivanna López Barbona</span></h2>
+            <h3>Estudiante de Desarrollador Web Full Stack </h3>
+            <p>Comencé Sé Programar en febrero de 2022 en el plan de Argentina Programa. En junio de 2022 comencé la segunda etapa de Yo Programo también en el plan de estudio de Argentina Programa.
+                Luego, comencé a estudiar Big Data y Ciencia de Datos en el Programa Codo a Codo 4.0 del Ministerio de Educación de la Ciudad de Buenos Aires, con formación en bases de datos, MySQL, y Python entre otras tecnologías. Actualmente me encuentro cursando el 4ª cohorte de Oracle Next generation.</p>
+            <a href="asset/cvbarbona.pdf" download="cvbarbona.pdf" target="_blank">Descargar CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION EDUCACION -->
+    <section id="educacion">
+        <h3 class="titulo-seccion">EDUCACIÓN</h3>
+        <div class="filas">
+            <div class="educacion">
+                <span class="icono"><i class="fa-brands fa-js"></i></span>
+                <h4>JAVA SCRIPT</h4>
+                <p>CONOCIMIENTOS ADQUIRIDOS EN ARGENTINA PROGRAMA, ORACLE NEXT GENERATION Y TICMAS</p>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-brands fa-html5"></i></span>
+                <h4>HTML 5</h4>
+                <p>CONOCIMIENTOS ADQUIRIDOS EN ARGENTINA PROGRAMA, ORACLE NEXT GENERATION Y TICMAS</p>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-brands fa-css3"></i></span>
+                <h4>CSS</h4>
+                <p>CONOCIMIENTOS ADQUIRIDOS EN ARGENTINA PROGRAMA, ORACLE NEXT GENERATION Y TICMAS</p>
+            </div>
+        </div>
+        <div class="filas">
+            <div class="educacion">
+                <span class="icono"><i class="fa-brands fa-angular"></i></span>
+                <h4>ANGULAR</h4>
+                <p>CONOCIMIENTOS ADQUIRIDOS EN ARGENTINA PROGRAMA, ORACLE NEXT GENERATION Y TICMAS</p>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-brands fa-python"></i></span>
+                <h4>PYTHON</h4>
+                <p>CONOCIMIENTOS ADQUIRIDOS EL CURSO DE BIG DAT DEL PROGRAMA CODO A CODO</p>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-brands fa-java"></i></span>
+                <h4>JAVA</h4>
+                <p>CONOCIMIENTOS ADQUIRIDOS EN ARGENTINA PROGRAMA, ORACLE NEXT GENERATION Y TICMAS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">100%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Python</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="Wf" class="barra-progreso4"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="Js" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Java</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="Ps" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>MYSQL</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="Ps" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Angular</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="Wf"class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="filas">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="asset/Barberiaalura.PNG" alt="">
+                <div class="info">
+                    <h4>Barbería Alura</h4>
+                    <a href="https://github.com/Ivanna49/ORACLE-BarberiaAlura" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    <a href="https://ivanna49.github.io/ORACLE-BarberiaAlura/" target="_blank"><i class="fa-solid fa-play"></i></a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="asset/encriptador.PNG" alt="">
+                <div class="info">
+                    <h4>Encriptador de texto</h4>
+                    <a href="https://github.com/Ivanna49/Encriptador_de_texto" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    <a href="https://ivanna49.github.io/Encriptador_de_texto/" target="_blank"><i class="fa-solid fa-play"></i></a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="asset/Captura.PNG" alt="">
+                <div class="info">
+                    <h4>Mi Portfolio en Angular</h4>
+                    <a href="https://github.com/Ivanna49/FRONT2" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    <a href="https://frontendib.web.app/" target="_blank"><i class="fa-solid fa-play"></i></a>
+                </div>
+            </div>
+        </div>
+     </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila-mitad">
+                    <input type="text" placeholder="Nombre completo" class="input-mitad">
+                    <input type="email" placeholder="Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje ..." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Realizado por Ivanna López Barbona</p>
+        <p>©2023 | Buenos Aires, Argentina</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/ivanna.lopezbarbona/"target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com/ivanna.lopezbarbona/"target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/Ivanna49" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
